@@ -1,12 +1,12 @@
-const db = require('mongoose');
+const db = require("mongoose");
 
 db.Promise = global.Promise;
 
 async function connect(url) {
-    await db.connect(url, {
-        useNewUrlParser: true,
-    });
-    console.log('[db] Conectada con éxito');
+  await db.connect(url, {
+    useNewUrlParser: true,
+  });
+  console.log("[db] Conectada con éxito");
 }
 
 module.exports = connect;
